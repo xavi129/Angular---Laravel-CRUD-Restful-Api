@@ -18,9 +18,13 @@ If everything goes well, then you'll see some testing records in your homepage. 
 
 ## Api
 Api is tested with postman. You can test these api by visiting these links:
+
 Get Data: `http://localhost:8000/api/employee`
+
 Create Data: `http://localhost:8000/api/addEmployee`
+
 Delete Data: `http://localhost:8000/api/deleteEmployee/{data_id}`
+
 Update Data: `http://localhost:8000/api/updateEmployee/{data_id}`
 
 ## Author Muhammad Shahzaib
