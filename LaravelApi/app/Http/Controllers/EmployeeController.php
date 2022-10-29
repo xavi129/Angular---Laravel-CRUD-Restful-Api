@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Employee;
+use App\Models\Contact;
 
 class EmployeeController extends Controller
 {
@@ -41,5 +42,10 @@ class EmployeeController extends Controller
         }
         $employee->delete();
         return response()->json(null, 204);
+    }
+
+    public function store(Request $request) {
+        $data = Contact::create($request->all());
+        return response($data, 201);
     }
 }
