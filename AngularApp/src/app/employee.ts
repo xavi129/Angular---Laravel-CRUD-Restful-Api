@@ -1,6 +1,11 @@
 export class Employee {
-    id:any;
-    name:any;
-    email:any;
-    salary:any;
+full_name:any
+company:any;
+area:any;
+department:any;
+position:any;
+photo:any;
+hiring_date:any;
+status:any;
+email:any;
 }
