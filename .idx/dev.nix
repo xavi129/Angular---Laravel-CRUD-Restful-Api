@@ -6,6 +6,8 @@
   # Use https://search.nixos.org/packages to find packages
   packages = [
     pkgs.nodejs_20
+    pkgs.php81
+    pkgs.php81Packages.composer
   ];
   # Sets environment variables in the workspace
   env = {};

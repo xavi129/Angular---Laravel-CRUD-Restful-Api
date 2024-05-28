@@ -1,4 +1,4 @@
-<h2>Angular & Laravel CRUD with Rest API</h2>
+<h2>CRUD de Empleados</h2>
 <form (ngSubmit)="insertData()" class="mt-5">
     <div class="form-group">
         <label for="full_name">Nombre completo</label>
@@ -46,14 +46,15 @@
     <thead>
         <tr>
             <th scop="col">#</th>
-            <th scop="col">Full Name</th>
-            <th scop="col">Company</th>
-            <th scop="col">Area</th>
-            <th scop="col">Department</th>
-            <th scop="col">Position</th>
-            <th scop="col">Photograph (optional)</th>
-            <th scop="col">Hire Date</th>
-            <th scop="col">Status</th>
+            <th scop="col">Nombre completo</th>
+            <th scop="col">Empresa</th>
+            <th scop="col">Email</th>
+            <th scop="col">Área</th>
+            <th scop="col">Departamento</th>
+            <th scop="col">Puesto</th>
+            <th scop="col">Fotografía (optional)</th>
+            <th scop="col">Fecha de alta</th>
+            <th scop="col">Estatus</th>
 
             <th>Action</th>
         </tr>
@@ -63,6 +64,7 @@
             <th scope="row">{{emp.id}}</th>
             <td>{{emp.full_name}}</td>
             <td>{{emp.company}}</td>
+            <td>{{emp.email}}</td>
             <td>{{emp.area}}</td>
             <td>{{emp.department}}</td>
             <td>{{emp.position}}</td>

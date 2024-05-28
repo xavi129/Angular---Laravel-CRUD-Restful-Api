@@ -15,21 +15,40 @@ class EmployeesTableSeeder extends Seeder
     public function run()
     {
         Employee::create([
-            'name'  =>  'Shahzaib',
-            'email' =>  'm.shahzaib3242@gmail.com',
-            'salary' => '600'
+            'full_name' => 'John Doe',
+            'email' =>  'John_Doe@gmail.com',
+            'company' => 'ABC Company',
+            'area' => 'Marketing',
+            'department' => 'Sales',
+            'position' => 'Sales Executive',
+            'photo' => 'shahzaib.jpg',
+            'hiring_date' => '2023-01-01',
+            'status' => 'active'
         ]);
 
         Employee::create([
-            'name'  =>  'Media',
-            'email' =>  'media@gmail.com',
-            'salary' => '700'
+            'full_name' => 'John Doe',
+            'email' =>  'John@gmail.com',
+            'company' => 'XYZ Company',
+            'area' => 'Finance',
+            'department' => 'Accounts',
+            'position' => 'Accountant',
+            'photo' => 'media.jpg',
+            'hiring_date' => '2023-02-01',
+            'status' => 'inactive'
         ]);
 
         Employee::create([
-            'name'  =>  'Muhammad',
-            'email' =>  'customer@gmail.com',
-            'salary' => '1000'
+            'full_name' => 'John Doe',
+            'email' =>  'JohnDoe@gmail.com',
+            'company' => 'PQR Company',
+            'area' => 'HR',
+            'department' => 'Recruitment',
+            'position' => 'HR Manager',
+            'photo' => 'muhammad.jpg',
+            'hiring_date' => '2023-03-01',
+            'status' => 'active'
         ]);
+
     }
 }
